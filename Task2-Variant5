@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a = 501;
+    int b = 0;
+
+    while (b < 20)
+    {
+        if (a % 13 == 0 && a % 17 == 0)
+        {
+            cout << a << endl;
+            b++;
+        }
+
+        a++;
+    }
+
+    return 0;
+}
