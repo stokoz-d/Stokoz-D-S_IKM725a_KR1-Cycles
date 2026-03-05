@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n;
+    cout << "Введіть тризначне число: ";
+    cin >> n;
+
+    int a = n / 100;
+    int b = (n / 10) % 10;
+    int c = n % 10;
+
+    int max = a;
+
+    if (b > max) max = b;
+    if (c > max) max = c;
+
+    cout << "Максимальна цифра: ";
+
+    switch(max) 
+    {
+        case 0: cout << "нуль"; break;
+        case 1: cout << "один"; break;
+        case 2: cout << "два"; break;
+        case 3: cout << "три"; break;
+        case 4: cout << "чотири"; break;
+        case 5: cout << "п’ять"; break;
+        case 6: cout << "шість"; break;
+        case 7: cout << "сім"; break;
+        case 8: cout << "вісім"; break;
+        case 9: cout << "дев’ять"; break;
+    }
+
+    return 0;
+}
